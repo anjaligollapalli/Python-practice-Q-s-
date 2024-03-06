@@ -1,1 +1,29 @@
+#function to merge two strings alternatively 
+def merge(s1, s2):
 
+#to store the final string
+result = ""
+
+#for every index in the strings
+i = 0
+while(i< len(s1) or i< len(s2)):
+
+#first choose the ith character of the first string if it exists
+
+if(i<len(s1)):
+ result += s1[i]
+
+#then choose the ith character of the second string if it exists
+if(i<len(s2)):
+result += s2[i]
+
+i += 1
+
+return result
+
+#Driver Code 
+
+s1 = "Hello"
+s2 = "World"
+
+print (merge(s1,s2)) 
